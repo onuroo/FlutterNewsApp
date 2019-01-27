@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "550184455094",
+    "firebase_url": "https://hoaflutter.firebaseio.com",
+    "project_id": "hoaflutter",
+    "storage_bucket": "hoaflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550184455094:android:b3a1a6308a704fa4",
+        "android_client_info": {
+          "package_name": "com.example.hoaflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550184455094-adtsd7ubt224vtj7nqpekhnjfde8k82l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-VgNQ_Lvz79lVGAPtED3jEdvqV7gwodc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
