@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             print("onPressedItem");
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => NewsList( category: category )),
+              MaterialPageRoute(builder: (context) => PostList( category: category )),
             );
           },
         ),

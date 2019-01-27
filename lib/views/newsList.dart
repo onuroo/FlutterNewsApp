@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../stores/newsStore.dart';
+import '../stores/postStore.dart';
 
-class NewsList extends StatelessWidget {
+class PostList extends StatelessWidget {
   final String category;
 
-  NewsList({Key key, @required this.category}) : super(key: key);
+  PostList({Key key, @required this.category}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class NewsList extends StatelessWidget {
           backgroundColor: Color.fromRGBO(16, 21, 28, 1),
           appBar: AppBar(
             centerTitle: true,
-            title: const Text('Categories'),
+            title: Text(category),
             backgroundColor: Color.fromRGBO(16, 21, 28, 1),
           ),
           body: Center(
@@ -26,7 +26,7 @@ class NewsList extends StatelessWidget {
                 physics: const AlwaysScrollableScrollPhysics(),
                 itemCount: snapshot.data.posts.length,
                 itemBuilder: (BuildContext ctxt, int index) {
-                  return NewsItem(data: snapshot.data.posts[index]);
+                  return PostItem(data: snapshot.data.posts[index]);
                 },
               );
                 },
@@ -38,10 +38,10 @@ class NewsList extends StatelessWidget {
 }
 
 
-class NewsItem extends StatelessWidget {
+class PostItem extends StatelessWidget {
   final data;
 
-  NewsItem({this.data});
+  PostItem({this.data});
 
   @override
   Widget build(BuildContext context) {
